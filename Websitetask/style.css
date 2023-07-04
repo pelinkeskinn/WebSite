@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(61, 61, 61);
+}
+
+.blob {
+  width: 230px;
+  height: 230px;
+  margin-right: 10%;
+  background-image: url("https://marketifythemes.net/wp/tokyo/light/wp-content/uploads/2022/03/1.jpg");
+  background-size: cover;
+  background-position: 50%;
+  justify-content: flex-start;
+  align-items: center;
+  animation: blob 12s ease-in-out infinite;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+}
+
+@keyframes blob {
+  0% {
+    border-radius: 57% 43% 70% 30% / 44% 73% 27% 56%;
+  }
+  25% {
+    border-radius: 68% 32% 63% 37% / 26% 51% 49% 74%;
+  }
+  50% {
+    border-radius: 50% 50% 33% 67% / 43% 54% 46% 57%;
+  }
+  75% {
+    border-radius: 68% 32% 63% 37% / 26% 51% 49% 74%;
+  }
+  100% {
+    border-radius: 57% 43% 70% 30% / 44% 73% 27% 56%;
+  }
+}
+
+.black-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 23vw;
+  height: 100vh;
+  background-color: rgb(32, 32, 32);
+  padding: 20px;
+  color: #ffffff;
+}
+
+.main-title {
+  font-size: 26px;
+  font-family: 'Archivo Black', sans-serif;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.subtitles {
+  list-style: none;
+  padding: 0;
+  margin-left: 30px;
+  margin-bottom: 100px;
+}
+
+.subtitles li {
+  margin-bottom: 5px;
+}
+
+.subtitles li a {
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 50px;
+}
+
+.search-bar {
+  display: flex;
+  background-color: transparent;
+}
+
+.search-bar input[type="text"] {
+  width: 70%;
+  padding: 5px;
+  background-color: transparent;
+}
+
+.search-bar button {
+  background-color: transparent;
+  color: #000000;
+  padding: 5px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  margin-left: 20%;
+}
+
+.heading {
+  font-size: 44px;
+  margin-left: 50px;
+  font-family: 'Archivo Black', sans-serif;
+  margin-bottom: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  font-size: 15px;
+  margin-left: 50px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+  color: #d9d9d9;
+}
+
+.social-icons {
+  display: flex;
+  align-items: 50%;
+  margin-top: 150px;
+}
+
+.social-icons i {
+  color: #ffffff;
+  font-size: 15px;
+  margin-right: 10px;
+}
